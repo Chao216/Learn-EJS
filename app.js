@@ -8,12 +8,12 @@ app.get("/", (req,res)=>{
 
   var today = new Date()
   if (today.getDay()===6 || today.getDay()===0){
-    res.send("Haha, it's weekend")
+    res.sendFile(__dirname+"/index.html")
 
   } else{
-    res.write("<p>hard working man!</p>");
-    res.write("<h1>girls in town have fair skin</h1>")
-    res.send()
+  
+    res.sendFile(__dirname+"/index.html")
+
   }
 
 })
