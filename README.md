@@ -1,4 +1,5 @@
 # this is a repository for learning EJS in Node development.
+![EJS](https://ejs.bootcss.com/assets/images/ejs-logo.png)
 
 to send multiple line of message, you can
 ```
