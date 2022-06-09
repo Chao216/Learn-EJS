@@ -11,3 +11,5 @@ to avoid repetition, we use **templates** for HTML with *conditional rendering*
 check out the documentation at [EJS](https://ejs.co/)
 
 more precisely [work with express](https://github.com/mde/ejs/wiki/Using-EJS-with-Express)
+
+a marker of ejs looks like `<%= EJS %>`

@@ -1,6 +1,7 @@
 const express = require("express")
 const bodyParser = require("body-parser")
 const app = express()
+app.set("view engine", 'ejs')
 
 const port = 3000 || process.evn.PORT
 
@@ -11,7 +12,7 @@ app.get("/", (req,res)=>{
     res.sendFile(__dirname+"/index.html")
 
   } else{
-  
+
     res.sendFile(__dirname+"/index.html")
 
   }
