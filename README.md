@@ -45,3 +45,37 @@ you can cut an entire page into re-usable modules by put them in different `ejs 
 <%- include("header"); -%>
 <%- include("footer"); -%>
 ```
+------------------
+You can create your own modules as below
+```
+const options = {weekday:"long", day:"numeric", month:"long"}
+
+
+const getDate= function(){
+
+  const options = {weekday:"long", day:"numeric", month:"long"}
+  return new Date().toLocaleDateString("en-US", options)
+}
+
+
+const getDay= function(){
+
+  const options = {weekday:"long"}
+  return new Date().toLocaleDateString("en-US", options)
+}
+
+
+module.exports={getDate, getDay}
+```
+
+when you want to import in somewhere else use
+
+```
+const myModule = require(__dirname+"/myModule.js")
+
+const day = myModule.getDay()
+
+const day = myModule.getDate()
+
+```
+----------------------

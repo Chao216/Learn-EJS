@@ -1,6 +1,7 @@
 const express = require("express")
 const bodyParser = require("body-parser")
 const app = express()
+const myModule = require(__dirname+"/myModule.js")
 var items =["buy food", "cook food", "eat food"];
 var workItems=[];
 app.set("view engine", 'ejs')
@@ -10,11 +11,9 @@ app.use(express.static("publik"))
 const port = 3000 || process.evn.PORT
 
 app.get("/", (req,res)=>{
+//here!!!!!!!!!!!!!!!
 
-  var today = new Date().getDay()
-
-  var options = {weekday:"long", day:"numeric", month:"long"}
-  var day = new Date().toLocaleDateString("en-US", options);
+const day = myModule.getDay()
   res.render("list", {whatDay:day,itemArray:items});
 })
 
