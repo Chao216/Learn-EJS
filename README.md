@@ -39,6 +39,9 @@ when created inside a function block, `var let const` all create local scoped va
 
 when created inside none function block such as `if for while` blocks, `var` creates global scoped variable, `let const` create local scoped variables.
 
-*********
------------
-______________
+-------------
+you can cut an entire page into re-usable modules by put them in different `ejs files`, and include them later
+```
+<%- include("header"); -%>
+<%- include("footer"); -%>
+```
