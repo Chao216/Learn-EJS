@@ -7,3 +7,7 @@ res.write("<h1>girls in town have fair skin</h1>")
 res.send()
 ```
 to avoid repetition, we use **templates** for HTML with *conditional rendering*
+
+check out the documentation at [EJS](https://ejs.co/)
+
+more precisely [work with express](https://github.com/mde/ejs/wiki/Using-EJS-with-Express)
