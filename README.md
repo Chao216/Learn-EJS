@@ -18,3 +18,5 @@ a marker of ejs looks like `<%= EJS %>`
 
 inside ejs, you can copy paste the html templates. and leave a marker `<%= Variable %>`
 and in app.js, you can use `res.render("list", {Variable:dataToPass})` to pass the data from app js to ejs
+
+when you have more than 5 conditions, use `switch` instead of `if else if ... else` 
