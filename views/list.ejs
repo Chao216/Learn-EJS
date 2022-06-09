@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<%- include("header"); -%>
 
-<head>
-  <meta charset="utf-8">
-  <title>To Do List</title>
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
 
-<body>
 
   <div class="box" id="heading">
     <% if (whatDay ==="Saturday"|| whatDay==="Sunday"){%>
@@ -33,16 +26,11 @@
 
 <form class="" action="/" method="post">
   <input type="text" name="newItem" placeholder="type here" autocomplete="off">
-  <button type="submit" name="button">+</button>
+  <button type="submit" name="button" value= <%= whatDay %> >+</button>
 
 </form>
 
 
 </div>
 
-
-
-
-</body>
-
-</html>
+<%- include("footer"); -%> 
