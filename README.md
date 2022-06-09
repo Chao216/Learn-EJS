@@ -29,3 +29,5 @@ when you have more than 5 conditions, use `switch` instead of `if else if ... el
   <%}%>
 ```
 remember you need to wrap all code on each line with `<%  %>`
+
+to add an item use `res.redirect("/")`

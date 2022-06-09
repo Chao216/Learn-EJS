@@ -8,14 +8,25 @@
 
 <body>
 
-
   <% if (whatDay ==="Saturday"|| whatDay==="Sunday"){%>
-    <h1 style="color:purple"> <%= whatDay%> list </h1>
+    <h1 style="color:purple"> <%= whatDay%>  </h1>
   <% }else {%>
-      <h1 style="color:blue"> <%= whatDay%> list </h1>
+      <h1 style="color:blue"> <%= whatDay%>  </h1>
     <%}%>
 
+<ul>
+  
+<% for (let i =0; i < itemArray.length; i++) { %>
+  <li> <%=itemArray[i]%> </li>
+<%}%>
 
+</ul>
+
+<form class="" action="/" method="post">
+  <input type="text" name="newItem" placeholder="type here">
+  <button type="submit" name="button">Add</button>
+
+</form>
 
 </body>
 
