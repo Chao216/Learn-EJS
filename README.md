@@ -40,3 +40,5 @@ when created inside a function block, `var let const` all create local scoped va
 when created inside none function block such as `if for while` blocks, `var` creates global scoped variable, `let const` create local scoped variables.
 
 *********
+-----------
+______________
