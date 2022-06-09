@@ -4,6 +4,7 @@ const app = express()
 var items =["buy food", "cook food", "eat food"];
 app.set("view engine", 'ejs')
 app.use(bodyParser.urlencoded({ extended: true }))
+app.use(express.static("publik"))
 
 const port = 3000 || process.evn.PORT
 

@@ -4,29 +4,44 @@
 <head>
   <meta charset="utf-8">
   <title>To Do List</title>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
 
-  <% if (whatDay ==="Saturday"|| whatDay==="Sunday"){%>
-    <h1 style="color:purple"> <%= whatDay%>  </h1>
-  <% }else {%>
-      <h1 style="color:blue"> <%= whatDay%>  </h1>
-    <%}%>
+  <div class="box" id="heading">
+    <% if (whatDay ==="Saturday"|| whatDay==="Sunday"){%>
+      <h1 style="color:purple"> <%= whatDay%>  </h1>
+    <% }else {%>
+        <h1 style="color:blue"> <%= whatDay%>  </h1>
+      <%}%>
 
-<ul>
-  
-<% for (let i =0; i < itemArray.length; i++) { %>
-  <li> <%=itemArray[i]%> </li>
-<%}%>
+  </div>
 
-</ul>
+
+
+<div class="box">
+
+
+  <% for (let i =0; i < itemArray.length; i++) { %>
+      <div class="item">
+        <input type="checkbox" >
+    <p> <%=itemArray[i]%> </p>
+
+</div>
+  <%}%>
 
 <form class="" action="/" method="post">
-  <input type="text" name="newItem" placeholder="type here">
-  <button type="submit" name="button">Add</button>
+  <input type="text" name="newItem" placeholder="type here" autocomplete="off">
+  <button type="submit" name="button">+</button>
 
 </form>
+
+
+</div>
+
+
+
 
 </body>
 
