@@ -31,3 +31,12 @@ when you have more than 5 conditions, use `switch` instead of `if else if ... el
 remember you need to wrap all code on each line with `<%  %>`
 
 to add an item use `res.redirect("/")`
+-----
+
+## Scope of Variable
+
+when created inside a function block, `var let const` all create local scoped variables
+
+when created inside none function block such as `if for while` blocks, `var` creates global scoped variable, `let const` create local scoped variables.
+
+*********
