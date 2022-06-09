@@ -9,14 +9,14 @@ app.get("/", (req,res)=>{
 
   var today = new Date()
   if (today.getDay()===6 || today.getDay()===0){
-    res.sendFile(__dirname+"/index.html")
+    day ="weekend"
 
   } else{
 
-    res.sendFile(__dirname+"/index.html")
+    day = "weekday"
 
   }
-
+ res.render("list", {whatDay:day})
 })
 
 

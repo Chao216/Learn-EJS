@@ -13,3 +13,7 @@ check out the documentation at [EJS](https://ejs.co/)
 more precisely [work with express](https://github.com/mde/ejs/wiki/Using-EJS-with-Express)
 
 a marker of ejs looks like `<%= EJS %>`
+
+
+inside ejs, you can copy paste the html templates. and leave a marker `<%= Variable %>`
+and in app.js, you can use `res.render("list", {Variable:dataToPass})` to pass the data from app js to ejs
