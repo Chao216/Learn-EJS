@@ -7,7 +7,14 @@
 </head>
 
 <body>
-  <h1>Hello, it is <%= whatDay %></h1>
+
+
+  <% if (whatDay ==="Saturday"|| whatDay==="Sunday"){%>
+    <h1 style="color:purple"> <%= whatDay%> list </h1>
+  <% }else {%>
+      <h1 style="color:blue"> <%= whatDay%> list </h1>
+    <%}%>
+
 
 
 </body>
